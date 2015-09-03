@@ -2,7 +2,7 @@
 # Contributor: Florian Hahn <flo@fhahn.com>
 
 pkgname=neovim-git
-pkgver=0.r3908.b2ece14
+pkgver=0
 pkgrel=1
 pkgdesc='Fork of Vim aiming to improve user experience, plugins, and GUIs.'
 arch=('i686' 'x86_64')
@@ -22,7 +22,7 @@ install=neovim-git.install
 
 pkgver() {
   cd "${pkgname}"
-  printf "0.r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+  git log -1 --date=short --format="%cd.%h" | tr -d '-'
 }
 
 build() {
