@@ -2,8 +2,8 @@
 post_install() {
   echo ":: The Neovim executable is called 'nvim'."
   echo ":: To use your existing Vim configuration:"
-  echo "   ln -s ~/.vimrc ~/.nvimrc"
-  echo "   ln -s ~/.vim ~/.nvim"
+  echo "   ln -s ~/.vim ~/.config/nvim"
+  echo "   ln -s ~/.vimrc ~/.config/nvim/init.vim"
   echo ":: See ':help nvim' for more information on Neovim."
 }
 
