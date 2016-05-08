@@ -2,14 +2,14 @@
 # Contributor: Florian Hahn <flo@fhahn.com>
 
 pkgname=neovim-git
-pkgver=20160411.f47a20a
+pkgver=20160507.b02ba11
 pkgrel=1
 pkgdesc='Fork of Vim aiming to improve user experience, plugins, and GUIs.'
 arch=('i686' 'x86_64')
 url='http://neovim.io'
 license=('custom:neovim')
-depends=('jemalloc' 'libtermkey-bzr' 'libuv' 'libvterm-bzr' 'msgpack-c' 'unibilium')
-makedepends=('cmake' 'git' 'luajit' 'lua51-messagepack' 'lua51-lpeg')
+depends=('jemalloc' 'libtermkey' 'libuv' 'msgpack-c' 'unibilium' 'libvterm')
+makedepends=('git' 'cmake' 'luajit' 'lua51-mpack' 'lua51-lpeg')
 optdepends=('python2-neovim: for Python 2 plugin support (see :help nvim-python)'
             'python-neovim: for Python 3 plugin support (see :help nvim-python)'
             'xclip: for clipboard support (or xsel) (see :help nvim-clipboard)'
