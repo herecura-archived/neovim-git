@@ -2,7 +2,7 @@
 # Contributor: Florian Hahn <flo@fhahn.com>
 
 pkgname=neovim-git
-pkgver=20161125.ecd7beb
+pkgver=20161126.7be113d
 pkgrel=1
 pkgdesc='Fork of Vim aiming to improve user experience, plugins, and GUIs.'
 arch=('i686' 'x86_64')
